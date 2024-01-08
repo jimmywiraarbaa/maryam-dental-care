@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+:root {
+  --default: $default;
+  --system: $system;
+  --main: $main;
+  --background: $background;
+  --hover: $hover;
+  --extra: $extra;
+  --semi-background: $semi-background;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.nav {
+  position: fixed;
+  background-color: var(--background);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav a.current,
+.nav li a:hover {
+  font-weight: 900;
+}
+.nav a {
+  color: var(--default);
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.nav.active {
+  background-color: var(--default);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.nav.active a {
+  color: var(--system);
+}
+.nav .hover-underline-animation {
+  position: relative;
+  color: var(--default);
+}
+.nav .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--default);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav .active .hover-underline-animation {
+  position: relative;
+  color: var(--main);
+}
+.nav .active .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav .active .hover-underline-animation.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.nav .active .hover-underline-animation .btn {
+  margin-left: 1rem;
+  display: inline-block;
+  font-size: 1.25rem;
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  border: 2px solid #3498db;
+  background-color: var(--default);
+  color: #3498db;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav .active .hover-underline-animation .btn:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.nav .active .hover-underline-animation button[type=button] {
+  background-color: var(--default);
+}
+.nav ul li ul {
+  background-color: var(--main);
+}
+.nav.active ul li ul {
+  background-color: var(--background);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.4rem 0.7rem;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+$default: #ffffff;
+$system: #000000;
+$main: #00a1de;
+$background: #74c9ff;
+$hover: #0e7386;
+$extra: #e5b95c;
+$semi-background: #81ccfa;
+
+:root {
+  --default: $default;
+  --system: $system;
+  --main: $main;
+  --background: $background;
+  --hover: $hover;
+  --extra: $extra;
+  --semi-background: $semi-background;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
