@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Maryam Dental Care</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,209 +14,100 @@
   </head>
 
   <body>
+    <!-- Navbar -->
     <nav
-      class="nav fixed w-full z-20 top-0 start-0 border-b dark:border-gray-600"
+      class="nav-container navbar navbar-expand-lg navbar-dark fixed-top border-bottom"
     >
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a
-          href="https://github.com/alifsuryadi"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+      <div class="container">
+        <a href="/" class="navbar-brand d-flex align-items-center space-3">
           <img
-            src="images/dentinaglow icon.png"
-            class="h-8"
-            alt="Flowbite Logo"
+            src="images/maryam dental care.png"
+            class=""
+            alt=""
+            width="40px"
           />
-          <span
-            class="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >DentinaGlow</span
-          >
         </a>
-        <div
-          class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse logo"
-        >
-          <button type="button" class="btn btn-lg btn-block">Masuk</button>
+        <div class="d-flex flex-row-reverse">
+          <button type="button" class="btn btn-lg btn-block btn-login">
+            Masuk
+          </button>
           <button
-            data-collapse-toggle="navbar-sticky"
-            id="menuToggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="navbar-toggler"
             aria-controls="navbar-sticky"
             aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <span class="sr-only">Open main menu</span>
-            <!-- Ikon menu (bars) -->
-            <svg
-              class="w-5 h-5 menu-icon"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-            <!-- Ikon silang (X) -->
-            <svg
-              class="w-6 h-6 close-icon hidden"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-
         <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 relative"
+          class="collapse navbar-collapse justify-content-end"
           id="navbar-sticky"
         >
-          <ul
-            class="menu mt-2 flex flex-col font-medium rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border border-gray-700 rounded-lg dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="/"
-                class="block hover-underline-animation"
-                aria-current="page"
-                id="home-link"
-                >Home</a
-              >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/" class="nav-link active">Beranda</a>
             </li>
-
-            {{-- About --}}
-            <li class="group relative">
+            <li class="nav-item dropdown">
               <a
                 href="#"
-                class="flex items-center hover-underline-animation"
-                data-dropdown-toggle="dropdownAbout"
-              >
-                About
-                <!-- Downward arrow SVG -->
-                <svg
-                  class="w-5 h-5 ml-1 fill-current text-gray-500 transition-transform transform origin-center group-focus-within:rotate-180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7 10l5 5 5-5z" />
-                </svg>
-              </a>
-              <div
+                class="nav-link dropdown-toggle"
                 id="dropdownAbout"
-                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
-                <ul
-                  class="py-2 text-sm text-gray-700 dark:text-gray-200 flex-col"
-                  aria-labelledby="dropdownAbout"
-                >
-                  <li>
-                    <a
-                      href="#klinik"
-                      class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white hover-underline-animation"
-                      >Profil Klinik</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#fasilitas"
-                      class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white hover-underline-animation"
-                      >Fasilitas</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#karir"
-                      class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white hover-underline-animation"
-                      >Karir</a
-                    >
-                  </li>
-                </ul>
+                Tentang Kami
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownAbout">
+                <a href="/" class="dropdown-item">Profil</a>
+                <a href="/" class="dropdown-item">Fasilitas</a>
+                <a href="/" class="dropdown-item">Karir</a>
               </div>
             </li>
-
-            {{-- Dokter --}}
-            <li class="group relative">
+            <li class="nav-item dropdown">
               <a
                 href="#"
-                class="flex items-center hover-underline-animation"
-                data-dropdown-toggle="dropdownDokter"
+                class="nav-link dropdown-toggle"
+                id="dropdownDokter"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
                 Dokter
-                <!-- Downward arrow SVG -->
-                <svg
-                  class="w-5 h-5 ml-1 fill-current text-gray-500 transition-transform transform origin-center group-focus-within:rotate-180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7 10l5 5 5-5z" />
-                </svg>
               </a>
-              <div
-                id="dropdownDokter"
-                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-              >
-                <ul
-                  class="py-2 text-sm text-gray-700 dark:text-gray-200 flex-col"
-                  aria-labelledby="dropdownDokter"
-                >
-                  <li>
-                    <a
-                      href="/dokter"
-                      class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white hover-underline-animation"
-                      >Daftar Dokter</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#jadwal"
-                      class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white hover-underline-animation"
-                      >Jadwal Dokter</a
-                    >
-                  </li>
-                </ul>
+              <div class="dropdown-menu" aria-labelledby="dropdownDokter">
+                <a href="/" class="dropdown-item">Daftar Dokter</a>
+                <a href="/" class="dropdown-item">Jadwal Dokter</a>
               </div>
             </li>
-
-            <li>
-              <a
-                href="#blog"
-                class="block hover-underline-animation"
-                id="klinik-link"
-                >Galeri</a
-              >
+            <li class="nav-item">
+              <a href="/" class="nav-link">Galeri</a>
             </li>
-
-            <li>
+            <li class="nav-item dropdown">
               <a
-                href="#blog"
-                class="block hover-underline-animation"
-                id="klinik-link"
-                >Blog</a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="dropdownDokter"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Jenis Perawatan
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownDokter">
+                <a href="/" class="dropdown-item">Pembersihan Karang Gigi</a>
+                <a href="/" class="dropdown-item">Behel Gigi</a>
+              </div>
             </li>
-
-            <li>
-              <a
-                href="#harga"
-                class="block hover-underline-animation"
-                id="harga-link"
-                >Harga</a
-              >
+            <li class="nav-item">
+              <a href="/" class="nav-link">Blog</a>
             </li>
           </ul>
         </div>
@@ -226,17 +117,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
   </body>
