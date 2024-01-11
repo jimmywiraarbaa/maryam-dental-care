@@ -3,11 +3,11 @@
 --------------------------------------------------------------*/
 
 .header {
-  background: #fff;
+  background: $color-secondary;
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $color-nones;
 
   @media (max-width: 575px) {
     height: 70px;
@@ -36,9 +36,10 @@
     }
   }
 
-  .btn-book-a-table,
-  .btn-book-a-table:focus {
+  .btn-reservasi,
+  .btn-reservasi:focus {
     font-size: 14px;
+    border: 2px solid $color-primary;
     color: #fff;
     background: var(--color-primary);
     padding: 8px 20px;
@@ -47,8 +48,9 @@
     transition: 0.3s;
 
     &:hover {
-      color: #fff;
-      background: rgba(206, 18, 18, 0.8);
+      border: 2px solid $color-primary;
+      color: $color-primary;
+      background: $color-nones;
     }
   }
 }
@@ -90,7 +92,7 @@ section {
       font-family: var(--font-secondary);
       font-size: 16px;
       font-weight: 600;
-      color: #81c4bd;
+      color: $color-nones;
       white-space: nowrap;
       transition: 0.3s;
       position: relative;
@@ -110,7 +112,7 @@ section {
       height: 2px;
       bottom: -6px;
       left: 0;
-      background-color: var(--color-primary);
+      background-color: $color-hover;
       visibility: hidden;
       width: 0px;
       transition: all 0.3s ease-in-out 0s;
@@ -127,7 +129,7 @@ section {
     .active,
     .active:focus,
     li:hover > a {
-      color: #000;
+      color: $color-hover;
     }
 
     .dropdown {
@@ -141,8 +143,8 @@ section {
         z-index: 99;
         opacity: 0;
         visibility: hidden;
-        background: #fff;
-        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        background: $color-secondary;
+        box-shadow: 0px 0px 30px rgba(4, 4, 4, 0.25);
         transition: 0.3s;
         border-radius: 4px;
 
@@ -164,7 +166,7 @@ section {
         a:hover,
         .active:hover,
         li:hover > a {
-          color: var(--color-primary);
+          color: $color-hover;
         }
       }
 
@@ -227,7 +229,7 @@ section {
       inset: 0;
       padding: 50px 0 10px 0;
       margin: 0;
-      background: rgba(255, 255, 255, 0.9);
+      background: $color-secondary;
       overflow-y: auto;
       transition: 0.3s;
       z-index: 9998;
@@ -240,10 +242,10 @@ section {
       justify-content: space-between;
       padding: 10px 20px;
       font-family: var(--font-secondary);
-      border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+      border-bottom: 2px solid $color-secondary;
       font-size: 16px;
       font-weight: 600;
-      color: #81c4bd;
+      color: $color-nones;
       white-space: nowrap;
       transition: 0.3s;
     }
@@ -257,13 +259,13 @@ section {
 
     a:hover,
     li:hover > a {
-      color: #000;
+      color: $color-hover;
     }
 
     .active,
     .active:focus {
-      color: #000;
-      border-color: var(--color-primary);
+      color: $color-hover;
+      border-color: $color-hover;
     }
 
     .dropdown ul,
@@ -273,7 +275,7 @@ section {
       padding: 10px 0;
       margin: 10px 20px;
       transition: all 0.5s ease-in-out;
-      border: 1px solid #eee;
+      border: 2px solid $color-nones;
     }
 
     .dropdown > .dropdown-active,
@@ -284,7 +286,7 @@ section {
 }
 
 .mobile-nav-show {
-  color: var(--color-secondary);
+  color: $color-default;
   font-size: 28px;
   cursor: pointer;
   line-height: 0;
@@ -294,7 +296,7 @@ section {
 }
 
 .mobile-nav-hide {
-  color: var(--color-secondary);
+  color: black;
   font-size: 32px;
   cursor: pointer;
   line-height: 0;
