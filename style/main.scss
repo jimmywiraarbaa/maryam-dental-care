@@ -1,6 +1,17 @@
-@import "global";
-@import "fonts";
+@import "../vendor/bootstrap-5.0.2/scss/bootstrap.scss";
+
+@import "global/fonts";
+@import "global/colors";
+@import "global/icons";
+@import "global/global";
 
 @import "pages/home";
 
-@import "components/navbar";
+@import "components/section";
+@import "components/breadcrums";
+@import "components/scroll";
+@import "components/preloader";
+@import "components/header";
+@import "components/carousel";
+@import "components/about";
+@import "components/services";

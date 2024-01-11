@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# Section
+--------------------------------------------------------------*/
+
+section {
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.section-bg {
+  background-color: #eee;
+  background-image: url(../../images/wave/wave-haikei-size-5-v3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 30px;
+
+  h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #81c4bd;
+    text-transform: uppercase;
+    font-family: $font-default;
+  }
+
+  p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: $font-primary;
+
+    span {
+      color: $color-primary;
+    }
+  }
+}

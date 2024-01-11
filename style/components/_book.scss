@@ -1,0 +1,104 @@
+.book-a-table {
+  .reservation-img {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .reservation-form-bg {
+    background: rgba(55, 55, 63, 0.04);
+  }
+
+  .php-email-form {
+    padding: 40px;
+
+    @media (max-width: 575px) {
+      padding: 20px;
+    }
+
+    h3,
+    h4 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .error-message,
+    .sent-message,
+    .loading {
+      display: none;
+      padding: 15px;
+      margin-bottom: 24px;
+      font-weight: 600;
+
+      &.error-message {
+        color: #fff;
+        background: #df1529;
+        text-align: left;
+      }
+
+      &.sent-message {
+        color: #fff;
+        background: #059652;
+        text-align: center;
+      }
+
+      &.loading {
+        background: #fff;
+        text-align: center;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          margin: 0 10px -6px 0;
+          border: 3px solid #059652;
+          border-top-color: #fff;
+          animation: animate-loading 1s linear infinite;
+        }
+      }
+    }
+
+    input,
+    textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--color-primary);
+    }
+
+    input {
+      height: 48px;
+      padding: 12px 15px;
+    }
+
+    textarea {
+      padding: 12px 15px;
+    }
+
+    button[type="submit"] {
+      background: var(--color-primary);
+      border: 0;
+      padding: 14px 60px;
+      color: #fff;
+      transition: 0.4s;
+      border-radius: 50px;
+
+      &:hover {
+        background: #0e7387;
+      }
+    }
+  }
+}

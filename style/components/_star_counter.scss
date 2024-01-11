@@ -1,0 +1,45 @@
+// _stats-counter.scss
+.stats-counter {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/stats-bg.jpg") center center;
+  background-size: cover;
+  padding: 100px 0;
+  color: #fff;
+
+  h3 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .counter-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .single-counter {
+    flex: 0 0 24%;
+    text-align: center;
+
+    .counter {
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 0 20px;
+      display: block;
+      position: relative;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      color: #b6b6bf;
+    }
+  }
+}

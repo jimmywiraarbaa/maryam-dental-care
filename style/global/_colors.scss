@@ -1,0 +1,19 @@
+/* Colors */
+
+$color-nones: #ffffff;
+$color-background: #dedede;
+$color-hover: #f5eaa8;
+$color-extra: #c49260;
+$color-default: #212529;
+$color-primary: #0e7387;
+$color-secondary: #77bbb8;
+
+:root {
+  --color-nones: #{$color-nones};
+  --color-background: #{$color-background};
+  --color-extra: #{$color-extra};
+  --color-hover: #{$color-hover};
+  --color-default: #{$color-default};
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+}
