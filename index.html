@@ -4,21 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Maryam Dental Care</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <meta name="description" content="Maryam Dental Care" />
+    <meta name="author" content="Alif Suryadi, Jimmy Wira Arbaa" />
+
+    <link href="/images/favicon/favicon.ico" rel="icon" />
+    <link href="/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Vendor CSS Files -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/main.css" />
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav
-      class="nav-container navbar navbar-expand-lg navbar-dark fixed-top border-bottom"
-    >
-      <div class="container">
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
         <a href="/" class="navbar-brand d-flex align-items-center space-3">
           <img
             src="images/maryam dental care.png"
@@ -27,97 +33,243 @@
             width="40px"
           />
         </a>
-        <div class="d-flex flex-row-reverse">
-          <button type="button" class="btn btn-lg btn-block btn-login">
-            Masuk
-          </button>
-          <button
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-sticky"
-            type="button"
-            class="navbar-toggler"
-            aria-controls="navbar-sticky"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbar-sticky"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="/" class="nav-link active">Beranda</a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+
+            <li class="dropdown">
+              <a href="#"
+                ><span>Tentang Kami</span>
+                <i class="bi bi-chevron-down dropdown-indicator"></i
+              ></a>
+              <ul>
+                <li><a href="index.html">Profil</a></li>
+                <li><a href="#">Fasilitas</a></li>
+                <li><a href="#">Karir</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Blog</span>
+                    <i class="bi bi-chevron-down dropdown-indicator"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Happy Family</a></li>
+                    <li><a href="#">Kesehatan Gigi</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                id="dropdownAbout"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Tentang Kami
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownAbout">
-                <a href="/" class="dropdown-item">Profil</a>
-                <a href="/" class="dropdown-item">Fasilitas</a>
-                <a href="/" class="dropdown-item">Karir</a>
-              </div>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Dokter</span>
+                <i class="bi bi-chevron-down dropdown-indicator"></i
+              ></a>
+              <ul>
+                <li><a href="#">Daftar Dokter</a></li>
+                <li><a href="#">Jadwal Dokter</a></li>
+              </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                id="dropdownDokter"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dokter
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownDokter">
-                <a href="/" class="dropdown-item">Daftar Dokter</a>
-                <a href="/" class="dropdown-item">Jadwal Dokter</a>
-              </div>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Pelayanan</span>
+                <i class="bi bi-chevron-down dropdown-indicator"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="/">Pembersihan Karang Gigi</a>
+                </li>
+                <li><a href="/">Behel Gigi</a></li>
+                <li><a href="/">Veneer Gigi</a></li>
+                <li><a href="/">Pemutihan Gigi</a></li>
+                <li>
+                  <a href="/">Perawatan Saluran Akar Gigi</a>
+                </li>
+                <li><a href="/">Tambal Gigi</a></li>
+                <li><a href="/">Gigi Gigi</a></li>
+                <li><a href="/">Pencabutan Gigi</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a href="/" class="nav-link">Galeri</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                id="dropdownDokter"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Jenis Perawatan
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownDokter">
-                <a href="/" class="dropdown-item">Pembersihan Karang Gigi</a>
-                <a href="/" class="dropdown-item">Behel Gigi</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="nav-link">Blog</a>
-            </li>
+            <li><a href="/galeri">Galeri</a></li>
+            <li><a href="/promo">Promo</a></li>
           </ul>
+        </nav>
+        <!-- .navbar -->
+
+        <a class="btn-book-a-table" href="#reservasi">Reservasi</a>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Carousel Section ======= -->
+    <section class="dental-carousel" data-aos="zoom-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/images/carousel/banner.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/carousel/carousel.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/carousel/banner.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
+    <!-- End Carousel Section -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h2>About Us</h2>
+            <p>Learn More <span>About Us</span></p>
+          </div>
+
+          <div class="row gy-4">
+            <div
+              class="col-lg-7 position-relative about-img"
+              style="background-image: url(assets/img/about.jpg)"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <div class="call-us position-absolute">
+                <h4>Book a Table</h4>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 d-flex align-items-end"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="content ps-0 ps-lg-5">
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul>
+                  <li>
+                    <i class="bi bi-check2-all"></i> Ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-all"></i> Duis aute irure dolor in
+                    reprehenderit in voluptate velit.
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-all"></i> Ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate trideta storacalaperda mastiro
+                    dolore eu fugiat nulla pariatur.
+                  </li>
+                </ul>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident
+                </p>
+
+                <div class="position-relative mt-4">
+                  <img src="assets/img/about-2.jpg" class="img-fluid" alt="" />
+                  <a
+                    href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                    class="glightbox play-btn"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+    </main>
+    <!-- End #main -->
+
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- <div id="preloader"></div> -->
+
+    <!-- Vendor JS Files -->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/aos/aos.js"></script>
+    <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/vendor/php-email-form/validate.js"></script>
+
+    <script src="/script/main.js"></script>
   </body>
 </html>

@@ -1,28 +1,51 @@
 $default: #ffffff;
-$system: #000000;
-$main: #81c4bd;
 $background: #dedede;
-$hover: #0e7387;
 $extra: #f5eaa8;
 $semi-background: #c49260;
+$color-default: #212529;
+$color-primary: #0e7387;
+$color-secondary: #81c4bd;
 
 :root {
   --default: #{$default};
-  --system: #{$system};
-  --main: #{$main};
   --background: #{$background};
-  --hover: #{$hover};
   --extra: #{$extra};
   --semi-background: #{$semi-background};
+  --color-default: #{$color-default};
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* Colors */
+
+/* Smooth scroll behavior */
+:root {
   scroll-behavior: smooth;
 }
 
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: $font-default;
+  color: $color-default;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0e7387;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
 }

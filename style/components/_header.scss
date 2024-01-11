@@ -1,0 +1,322 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 90px;
+  border-bottom: 1px solid #fff;
+
+  @media (max-width: 575px) {
+    height: 70px;
+  }
+
+  &.sticked {
+    border-color: #eee;
+  }
+
+  .logo {
+    img {
+      max-height: 40px;
+      margin-right: 6px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+      font-family: var(--font-secondary);
+
+      span {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .btn-book-a-table,
+  .btn-book-a-table:focus {
+    font-size: 14px;
+    color: #fff;
+    background: var(--color-primary);
+    padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff;
+      background: rgba(206, 18, 18, 0.8);
+    }
+  }
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+/*--------------------------------------------------------------
+# Desktop Navigation
+--------------------------------------------------------------*/
+@media (min-width: 1280px) {
+  .navbar {
+    padding: 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+
+    li {
+      position: relative;
+    }
+
+    > ul > li {
+      white-space: nowrap;
+      padding: 10px 0 10px 28px;
+    }
+
+    a,
+    a:focus {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 3px;
+      font-family: var(--font-secondary);
+      font-size: 16px;
+      font-weight: 600;
+      color: #81c4bd;
+      white-space: nowrap;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    a i,
+    a:focus i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+    }
+
+    > ul > li > a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -6px;
+      left: 0;
+      background-color: var(--color-primary);
+      visibility: hidden;
+      width: 0px;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    a:hover:before,
+    li:hover > a:before,
+    .active:before {
+      visibility: visible;
+      width: 100%;
+    }
+
+    a:hover,
+    .active,
+    .active:focus,
+    li:hover > a {
+      color: #000;
+    }
+
+    .dropdown {
+      ul {
+        display: block;
+        position: absolute;
+        left: 28px;
+        top: calc(100% + 30px);
+        margin: 0;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        background: #fff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: 0.3s;
+        border-radius: 4px;
+
+        li {
+          min-width: 200px;
+        }
+
+        a {
+          padding: 10px 20px;
+          font-size: 15px;
+          text-transform: none;
+          font-weight: 600;
+
+          i {
+            font-size: 12px;
+          }
+        }
+
+        a:hover,
+        .active:hover,
+        li:hover > a {
+          color: var(--color-primary);
+        }
+      }
+
+      &:hover > ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+      }
+
+      .dropdown ul {
+        top: 0;
+        left: calc(100% - 30px);
+        visibility: hidden;
+      }
+
+      .dropdown:hover > ul {
+        opacity: 1;
+        top: 0;
+        left: 100%;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mobile-nav-show,
+  .mobile-nav-hide {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Mobile Navigation
+--------------------------------------------------------------*/
+@media (max-width: 1279px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    border-left: 1px solid #666;
+    bottom: 0;
+    transition: 0.3s;
+    z-index: 9997;
+
+    ul {
+      position: absolute;
+      inset: 0;
+      padding: 50px 0 10px 0;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.9);
+      overflow-y: auto;
+      transition: 0.3s;
+      z-index: 9998;
+    }
+
+    a,
+    a:focus {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      font-family: var(--font-secondary);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      font-weight: 600;
+      color: #81c4bd;
+      white-space: nowrap;
+      transition: 0.3s;
+    }
+
+    a i,
+    a:focus i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+    }
+
+    a:hover,
+    li:hover > a {
+      color: #000;
+    }
+
+    .active,
+    .active:focus {
+      color: #000;
+      border-color: var(--color-primary);
+    }
+
+    .dropdown ul,
+    .dropdown .dropdown ul {
+      position: static;
+      display: none;
+      padding: 10px 0;
+      margin: 10px 20px;
+      transition: all 0.5s ease-in-out;
+      border: 1px solid #eee;
+    }
+
+    .dropdown > .dropdown-active,
+    .dropdown .dropdown > .dropdown-active {
+      display: block;
+    }
+  }
+}
+
+.mobile-nav-show {
+  color: var(--color-secondary);
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 0;
+  transition: 0.5s;
+  z-index: 9999;
+  margin: 0 10px 0 20px;
+}
+
+.mobile-nav-hide {
+  color: var(--color-secondary);
+  font-size: 32px;
+  cursor: pointer;
+  line-height: 0;
+  transition: 0.5s;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 9999;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .navbar {
+  right: 0;
+}
+
+.mobile-nav-active .navbar:before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9996;
+}

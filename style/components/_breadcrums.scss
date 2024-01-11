@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# Breadcrums
+--------------------------------------------------------------*/
+
+.breadcrumbs {
+  padding: 15px 0;
+  background: rgba(55, 55, 63, 0.05);
+  margin-top: 90px;
+
+  @media (max-width: 575px) {
+    margin-top: 70px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+
+    li + li {
+      padding-left: 10px;
+
+      &::before {
+        display: inline-block;
+        padding-right: 10px;
+        color: #676775;
+        content: "/";
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .d-flex {
+      display: block !important;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    ol {
+      display: block;
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}
