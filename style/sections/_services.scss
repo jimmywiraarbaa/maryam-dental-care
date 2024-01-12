@@ -1,0 +1,29 @@
+.service-dental {
+  background: url(../../images/home/wave-background-full.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  h5 {
+    color: $color-hover;
+    font-size: 38px;
+    font-weight: 600;
+  }
+
+  .card {
+    border-radius: 15px;
+
+    .card-body {
+      padding: 0px;
+
+      .card-image {
+        img {
+          background-size: cover;
+          border-radius: 0px 0px 30% 30%;
+        }
+      }
+
+      .card-text {
+        border-top-right-radius: 30%;
+      }
+    }
+  }
+}

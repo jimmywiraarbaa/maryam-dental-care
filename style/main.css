@@ -9809,6 +9809,12 @@ textarea.form-control-lg {
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #212529;
@@ -9884,6 +9890,82 @@ section {
 }
 .section-header p span {
   color: #0e7387;
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .section-header p {
+  color: #c49260;
+}
+.about .section-content .card {
+  padding: 5px 20px;
+  border-bottom-right-radius: 50%;
+  background-color: #77bbb8;
+  color: #ffffff;
+}
+.about .section-content .card .card-title {
+  color: #f5eaa8;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 25px 0px;
+}
+.about .section-content .card .card-text {
+  max-height: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Baris ini ditambahkan */
+  display: -webkit-box; /* Baris ini ditambahkan */
+  -webkit-line-clamp: 6; /* Baris ini ditambahkan */
+  -webkit-box-orient: vertical; /* Baris ini ditambahkan */
+}
+.about .section-content .card .btn-more {
+  margin: 10px 0;
+  background-color: #ffffff;
+  color: #0e7387;
+  border-radius: 10px;
+  border: 2px solid #0e7387;
+}
+.about .section-content .card .btn-more:hover {
+  background-color: #c49260;
+  color: #ffffff;
+  border: 2px solid #c49260;
+}
+.about .section-content .card-slider {
+  overflow: hidden;
+  border-top-left-radius: 50%;
+  max-height: 400px;
+}
+.about .section-content .card-slider .glightbox .card-slider-image {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.about .section-content .card-slider .glightbox .card-slider-image:hover, .about .section-content .card-slider .glightbox .card-slider-image:focus {
+  filter: brightness(80%);
+  transform: scale(1.1) translateX(-20px);
+}
+
+.service-dental {
+  background: url(../../images/home/wave-background-full.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.service-dental h5, .service-dental .h5 {
+  color: #f5eaa8;
+  font-size: 38px;
+  font-weight: 600;
+}
+.service-dental .card {
+  border-radius: 15px;
+}
+.service-dental .card .card-body {
+  padding: 0px;
+}
+.service-dental .card .card-body .card-image img {
+  background-size: cover;
+  border-radius: 0px 0px 30% 30%;
+}
+.service-dental .card .card-body .card-text {
+  border-top-right-radius: 30%;
 }
 
 /*--------------------------------------------------------------
@@ -10313,55 +10395,4 @@ section.dental-carousel {
 }
 section.dental-carousel .carousel-border-radius {
   border-radius: 10px;
-}
-
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-.about .section-header p {
-  color: #c49260;
-}
-.about .section-content .card {
-  padding: 5px 20px;
-  border-bottom-right-radius: 30%;
-  background-color: #77bbb8;
-  color: #ffffff;
-}
-.about .section-content .card .card-title {
-  color: #f5eaa8;
-  font-size: 28px;
-  font-weight: 600;
-  margin: 25px 0px;
-}
-.about .section-content .card .card-text {
-  max-height: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis; /* Baris ini ditambahkan */
-  display: -webkit-box; /* Baris ini ditambahkan */
-  -webkit-line-clamp: 6; /* Baris ini ditambahkan */
-  -webkit-box-orient: vertical; /* Baris ini ditambahkan */
-}
-.about .section-content .card .btn-more {
-  margin: 10px 0;
-  background-color: #ffffff;
-  color: #0e7387;
-  border-radius: 10px;
-  border: 2px solid #c49260;
-}
-.about .section-content .card .btn-more:hover {
-  background-color: #c49260;
-  color: #ffffff;
-  border: 2px solid #c49260;
-}
-
-.service-dental {
-  background: url(../../images/home/wave-background.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.service-dental h5, .service-dental .h5 {
-  color: #c49260;
-  font-size: 38px;
-  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

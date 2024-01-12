@@ -16,8 +16,6 @@
     <link href="/vendor/aos/aos.css" rel="stylesheet" />
     <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -47,7 +45,7 @@
                 <i class="bi bi-chevron-down dropdown-indicator"></i
               ></a>
               <ul>
-                <li><a href="index.html">Profil</a></li>
+                <li><a href="profil.html">Profil</a></li>
                 <li><a href="#">Fasilitas</a></li>
                 <li><a href="#">Karir</a></li>
                 <li class="dropdown">
@@ -193,8 +191,8 @@
     <main id="main" class="page-home">
       <!-- ======= About Section ======= -->
       <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
             <div class="d-flex">
               <hr class="my-auto flex-grow-1" />
               <h2 class="elementor-divider px-4">Tentang Kami</h2>
@@ -202,7 +200,7 @@
             </div>
             <p>Maryam <span>Dental Care</span></p>
           </div>
-          <div class="section-content">
+          <div class="section-content" data-aos="fade-up">
             <div class="row align-items-center justify-content-center">
               <div class="col-12 col-lg-6 mt-4 px-4">
                 <div class="card">
@@ -220,13 +218,21 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-5 px-4">
-                <div class="mt-4">
-                  <img
-                    src="/images/home/Profile Klinik.png"
-                    class="card-img"
-                    alt=""
-                  />
+              <div class="col-12 col-lg-5 px-4 mt-4">
+                <div class="card-slider">
+                  <a
+                    class="glightbox"
+                    href="/images/home/Profile-Klinik.png"
+                    title="Maryam Dental Care"
+                    type="image"
+                    slideEffect="slide"
+                  >
+                    <img
+                      src="/images/home/Profile-Klinik.png"
+                      class="card-img card-slider-image"
+                      alt=""
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -237,81 +243,29 @@
 
       <section class="service-dental">
         <div class="container">
-          <div class="row text-center py-5">
+          <div class="row text-center py-5" data-aos="fade-up">
             <div class="col-12">
               <h5>Pelayanan Kami</h5>
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
+            <div
+              class="col-12 col-md-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                  <h4 class="my-0 font-weight-normal">Free</h4>
-                </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title">
-                    $0 <small class="text-muted">/ mo</small>
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button
-                    type="button"
-                    class="btn btn-lg btn-block btn-outline-primary"
-                  >
-                    Sign up for free
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                  <h4 class="my-0 font-weight-normal">Free</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">
-                    $0 <small class="text-muted">/ mo</small>
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button
-                    type="button"
-                    class="btn btn-lg btn-block btn-outline-primary"
-                  >
-                    Sign up for free
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                  <h4 class="my-0 font-weight-normal">Free</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">
-                    $0 <small class="text-muted">/ mo</small>
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button
-                    type="button"
-                    class="btn btn-lg btn-block btn-outline-primary"
-                  >
-                    Sign up for free
-                  </button>
+                  <div class="card-image">
+                    <img
+                      class="card-img-top"
+                      src="/images/services/scalling 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-text">
+                    <p>Scalling Gigi</p>
+                  </div>
                 </div>
               </div>
             </div>
