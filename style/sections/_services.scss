@@ -2,28 +2,89 @@
   background: url(../../images/home/wave-background-full.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  h5 {
+
+  .title {
     color: $color-hover;
     font-size: 38px;
     font-weight: 600;
+    margin: 0px;
   }
 
-  .card {
-    border-radius: 15px;
+  .subtitle {
+    color: $color-nones;
+  }
 
-    .card-body {
-      padding: 0px;
+  .slide-container {
+    padding: 40px 80px;
+    background: transparent;
+    border-radius: 25px;
+    width: 100%;
 
-      .card-image {
-        img {
-          background-size: cover;
-          border-radius: 0px 0px 30% 30%;
+    @include media-breakpoint-down(md) {
+      padding: 40px 10px;
+    }
+
+    .image-content {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .slide-content {
+      overflow: hidden;
+      padding: 20px;
+
+      .card {
+        border-radius: 15px;
+        border: none;
+        transition: fillter 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+        &:hover {
+          filter: brightness(90%);
+          transform: scale(1.1);
+        }
+
+        .card-body {
+          padding: 0px;
+
+          .card-content {
+            background-color: $color-primary;
+            border-radius: 0px 0px 15px 15px;
+
+            p {
+              font-size: 24px;
+              font-weight: 500;
+              color: $color-nones;
+              margin: auto;
+            }
+          }
         }
       }
+    }
 
-      .card-text {
-        border-top-right-radius: 30%;
+    .swiper-navBtn {
+      color: $color-nones;
+
+      &:hover {
+        color: $color-primary;
       }
+
+      &::before,
+      &::after {
+        font-size: 40px;
+      }
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+
+    .swiper-button-next {
+      right: 0;
+    }
+
+    .swiper-button-prev {
+      left: 0;
     }
   }
 }
