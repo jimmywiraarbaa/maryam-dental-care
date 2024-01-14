@@ -1,0 +1,35 @@
+// _stats-counter.scss
+/*--------------------------------------------------------------
+# Stats Counter Section
+--------------------------------------------------------------*/
+.stats-counter {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/stats-counter/dental-background.jpg") center center;
+  background-size: cover;
+  padding: 100px 0;
+
+  @media (min-width: 1365px) {
+    background-attachment: fixed;
+  }
+
+  .stats-item {
+    padding: 30px;
+    width: 100%;
+
+    span {
+      font-size: 48px;
+      display: block;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+      font-family: var(--font-secondary);
+      font-size: 16px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
