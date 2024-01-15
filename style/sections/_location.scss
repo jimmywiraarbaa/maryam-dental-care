@@ -1,0 +1,51 @@
+.location {
+  .image-content {
+    img {
+      margin: 5px;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 120px;
+      }
+    }
+
+    .image-radius-top {
+      border-top-right-radius: 150px;
+    }
+
+    .image-radius-bottom {
+      border-bottom-left-radius: 150px;
+    }
+  }
+
+  .location-content {
+    .title {
+      font-size: 38px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
+
+    .subtitle {
+      margin-bottom: 95px;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 50px;
+      }
+    }
+
+    .btn-more {
+      margin: 10px 0;
+      background-color: $color-secondary;
+      color: $color-nones;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: $color-extra;
+        color: $color-nones;
+      }
+    }
+
+    .text-hours {
+      line-height: 50px;
+    }
+  }
+}

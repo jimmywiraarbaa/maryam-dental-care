@@ -1,0 +1,52 @@
+.list-dokter {
+  h2 {
+    font-family: $font-primary;
+    color: $color-default;
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 60px;
+  }
+
+  .dokter-detail {
+    margin-bottom: 20px;
+    .title {
+      color: $color-extra;
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      color: #777;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .jadwal-dokter {
+    margin-top: 24px;
+    .title {
+      color: $color-extra;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      padding: 2px 0;
+      color: #777;
+      font-size: 16px;
+    }
+  }
+  .btn-reservasi {
+    margin-top: 20px;
+    background-color: $color-extra;
+    color: $color-nones;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-nones;
+    }
+  }
+}
