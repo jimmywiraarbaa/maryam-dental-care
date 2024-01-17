@@ -9844,12 +9844,35 @@ h6,
   font-family: "Inter", sans-serif;
 }
 
+.color-extra {
+  color: #c49260 !important;
+}
+
 /*--------------------------------------------------------------
 # Home Page
 --------------------------------------------------------------*/
 .page-home h5, .page-home .h5 {
   font-weight: 300;
   margin-bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# Dokter Page
+--------------------------------------------------------------*/
+.page-dokter .title {
+  color: #c49260;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.page-dokter .subtitle {
+  color: #777;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 2px 0;
+}
+.page-dokter .ml-4 {
+  margin-left: 25px;
 }
 
 /*--------------------------------------------------------------
@@ -10223,12 +10246,13 @@ section {
 .location .location-content .title {
   font-size: 38px;
   font-weight: 600;
+  margin-top: 35px;
   margin-bottom: 36px;
 }
 .location .location-content .subtitle {
-  margin-bottom: 95px;
+  margin-bottom: 85px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .location .location-content .subtitle {
     margin-bottom: 50px;
   }
@@ -10258,17 +10282,17 @@ section {
 .hero h2, .hero .h2 {
   font-size: 64px;
   font-weight: 700;
-  margin-bottom: 20px;
-  color: var(--color-secondary);
+  margin-bottom: 30px;
+  color: #0e7387;
   font-family: var(--font-primary);
 }
 .hero h2 span, .hero .h2 span {
-  color: var(--color-primary);
+  color: #c49260;
 }
 .hero p {
   color: #4f4f5a;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .hero .btn-reservation {
   font-weight: 500;
@@ -10306,6 +10330,10 @@ section {
 .hero .btn-list-dokter:hover i {
   color: #c49260;
 }
+.hero img {
+  border-radius: 300px 0px 300px 0px;
+  cursor: pointer;
+}
 @media (max-width: 640px) {
   .hero h2, .hero .h2 {
     font-size: 36px;
@@ -10326,30 +10354,11 @@ section {
 .list-dokter .dokter-detail {
   margin-bottom: 20px;
 }
-.list-dokter .dokter-detail .title {
-  color: #c49260;
-  font-size: 30px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-.list-dokter .dokter-detail .subtitle {
-  color: #777;
-  font-size: 16px;
-  font-weight: 400;
-}
 .list-dokter .jadwal-dokter {
   margin-top: 24px;
 }
 .list-dokter .jadwal-dokter .title {
-  color: #c49260;
   font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-.list-dokter .jadwal-dokter .row {
-  padding: 2px 0;
-  color: #777;
-  font-size: 16px;
 }
 .list-dokter .btn-reservasi {
   margin-top: 20px;
@@ -10360,6 +10369,74 @@ section {
 .list-dokter .btn-reservasi:hover {
   background-color: #0e7387;
   color: #ffffff;
+}
+
+/*--------------------------------------------------------------
+# Fasilities Section
+--------------------------------------------------------------*/
+.fasilities .container-fluid, .fasilities .container-sm, .fasilities .container-md, .fasilities .container-lg, .fasilities .container-xl, .fasilities .container-xxl {
+  padding: 0;
+}
+.fasilities .fasility-item {
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 30px;
+}
+@media (max-width: 575px) {
+  .fasilities .fasility-item {
+    min-height: 500px;
+  }
+}
+.fasilities .fasility-item:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+.fasilities .fasility-item h3, .fasilities .fasility-item .h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+  position: relative;
+}
+.fasilities .fasility-item .price {
+  color: #fff;
+  border-bottom: 2px solid var(--color-primary);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+}
+.fasilities .fasility-item .description {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .fasilities .fasility-item {
+    z-index: 1;
+  }
+  .fasilities .fasility-item:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .fasilities .fasility-item:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+.fasilities .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.fasilities .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #d1d1d7;
+  opacity: 1;
+}
+.fasilities .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
 }
 
 /*--------------------------------------------------------------

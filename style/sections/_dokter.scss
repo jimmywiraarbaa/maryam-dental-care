@@ -9,33 +9,13 @@
 
   .dokter-detail {
     margin-bottom: 20px;
-    .title {
-      color: $color-extra;
-      font-size: 30px;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
-
-    .subtitle {
-      color: #777;
-      font-size: 16px;
-      font-weight: 400;
-    }
   }
 
   .jadwal-dokter {
     margin-top: 24px;
-    .title {
-      color: $color-extra;
-      font-size: 24px;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
 
-    .row {
-      padding: 2px 0;
-      color: #777;
-      font-size: 16px;
+    .title {
+      font-size: 24px;
     }
   }
   .btn-reservasi {

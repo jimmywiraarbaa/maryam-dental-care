@@ -9,19 +9,19 @@
   h2 {
     font-size: 64px;
     font-weight: 700;
-    margin-bottom: 20px;
-    color: var(--color-secondary);
+    margin-bottom: 30px;
+    color: $color-primary;
     font-family: var(--font-primary);
 
     span {
-      color: var(--color-primary);
+      color: $color-extra;
     }
   }
 
   p {
     color: #4f4f5a;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .btn-reservation {
@@ -64,6 +64,11 @@
         color: $color-extra;
       }
     }
+  }
+
+  img {
+    border-radius: 300px 0px 300px 0px;
+    cursor: pointer;
   }
 
   @media (max-width: 640px) {

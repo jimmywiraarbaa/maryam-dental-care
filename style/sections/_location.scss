@@ -21,13 +21,14 @@
     .title {
       font-size: 38px;
       font-weight: 600;
+      margin-top: 35px;
       margin-bottom: 36px;
     }
 
     .subtitle {
-      margin-bottom: 95px;
+      margin-bottom: 85px;
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(lg) {
         margin-bottom: 50px;
       }
     }
