@@ -1,0 +1,32 @@
+.list-dokter {
+  h2 {
+    font-family: $font-primary;
+    color: $color-default;
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 60px;
+  }
+
+  .dokter-detail {
+    margin-bottom: 20px;
+  }
+
+  .jadwal-dokter {
+    margin-top: 24px;
+
+    .title {
+      font-size: 24px;
+    }
+  }
+  .btn-reservasi {
+    margin-top: 20px;
+    background-color: $color-extra;
+    color: $color-nones;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-nones;
+    }
+  }
+}

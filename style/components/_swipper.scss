@@ -4,7 +4,6 @@
 }
 
 .swiper-slide {
-  text-align: center;
   font-size: 18px;
   background: $color-secondary;
   display: flex;
@@ -14,8 +13,6 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 

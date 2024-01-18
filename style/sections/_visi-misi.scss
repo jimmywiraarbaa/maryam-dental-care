@@ -1,0 +1,41 @@
+.visi-misi {
+  .title {
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: $color-primary;
+      position: relative;
+      margin-bottom: 100px;
+    }
+  }
+
+  .visi {
+    padding: 50px 150px;
+    background-color: $color-secondary;
+    text-align: center;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .misi {
+    padding: 50px 150px;
+    background-color: $color-hover;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: $color-default;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #0e7387;
+  color: $color-extra;
   text-decoration: none;
 }
 
@@ -34,4 +34,8 @@ h4,
 h5,
 h6 {
   font-family: $font-secondary;
+}
+
+.color-extra {
+  color: $color-extra !important;
 }

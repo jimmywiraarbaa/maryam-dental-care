@@ -6,12 +6,23 @@
 @import "global/global";
 
 @import "pages/home";
+@import "pages/dokter";
+@import "pages/reservation";
+@import "pages/galleries";
+@import "pages/promo";
 
 @import "sections/section";
 @import "sections/about";
 @import "sections/services";
 @import "sections/stats_counter";
-@import "sections/why_us";
+@import "sections/why-us";
+@import "sections/testimonial";
+@import "sections/location";
+@import "sections/hero";
+@import "sections/dokter";
+@import "sections/facilities";
+@import "sections/visi-misi";
+@import "sections/contact";
 
 @import "components/breadcrums";
 @import "components/scroll";
@@ -19,3 +30,4 @@
 @import "components/header";
 @import "components/carousel";
 @import "components/swipper";
+@import "components/footer";
