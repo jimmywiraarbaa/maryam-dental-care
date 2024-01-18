@@ -12,24 +12,50 @@
     background-position: center;
     min-height: 600px;
     padding: 30px;
+    transition: background 0.3s ease;
+    position: relative;
 
     @media (max-width: 575px) {
       min-height: 500px;
     }
 
-    &:before {
-      content: "";
-      background: rgba(0, 0, 0, 0.6);
-      position: absolute;
-      inset: 0;
+    &:hover,
+    &:focus {
+      &:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        inset: 0;
+      }
+
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        #000 center / cover;
+
+      h3,
+      .price,
+      .description {
+        display: block;
+        transition: opacity 0.3s ease 0.3s;
+        opacity: 1;
+      }
+    }
+
+    h3,
+    .price,
+    .description {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
 
     h3 {
+      text-align: center;
       font-size: 24px;
       font-weight: 700;
       margin-bottom: 5px;
       color: #fff;
       position: relative;
+      margin-bottom: 100px;
     }
 
     .price {

@@ -1,3 +1,4 @@
+/* Contact Section */
 .contact {
   .info-item {
     background: #f4f4f4;
@@ -32,18 +33,16 @@
       font-size: 14px;
     }
 
-    .social-links {
-      a {
-        font-size: 24px;
-        display: inline-block;
-        color: rgba(55, 55, 63, 0.7);
-        line-height: 1;
-        margin: 4px 6px 0 0;
-        transition: 0.3s;
+    .social-links a {
+      font-size: 24px;
+      display: inline-block;
+      color: rgba(55, 55, 63, 0.7);
+      line-height: 1;
+      margin: 4px 6px 0 0;
+      transition: 0.3s;
 
-        &:hover {
-          color: var(--color-primary);
-        }
+      &:hover {
+        color: var(--color-primary);
       }
     }
   }
@@ -108,14 +107,14 @@
       &:focus {
         border-color: var(--color-primary);
       }
-    }
 
-    input {
-      height: 48px;
-    }
+      input {
+        height: 48px;
+      }
 
-    textarea {
-      padding: 10px 12px;
+      textarea {
+        padding: 10px 12px;
+      }
     }
 
     button[type="submit"] {
@@ -127,8 +126,18 @@
       border-radius: 50px;
 
       &:hover {
-        background: #0e7387;
+        background: $color-extra;
       }
+    }
+  }
+
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
     }
   }
 }

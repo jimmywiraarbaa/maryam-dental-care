@@ -16,8 +16,6 @@
     <link href="/vendor/aos/aos.css" rel="stylesheet" />
     <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -48,7 +46,7 @@
               ></a>
               <ul>
                 <li><a href="profil.html">Profil</a></li>
-                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="#">Fasilitas</a></li>
                 <li><a href="#">Asuransi</a></li>
                 <li><a href="#">Karir</a></li>
                 <li class="dropdown">
@@ -106,86 +104,70 @@
     </header>
     <!-- End Header -->
 
-    <main id="main" class="page-profil">
-      <!-- ======= Hero Section ======= -->
-      <section id="hero" class="hero d-flex align-items-center">
+    <main id="main" class="page-dokter">
+      <!-- ======= Breadcrumbs ======= -->
+      <div class="breadcrumbs">
         <div class="container">
-          <div class="row justify-content-between gy-5">
-            <div
-              class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"
-            >
-              <h2 data-aos="fade-up">
-                Profil <span>Maryam </span><br />Dental Care
-              </h2>
-              <p data-aos="fade-up" data-aos-delay="100">
-                Pusat perawatan gigi yang mengutamakan kesehatan dan kecantikan
-                senyuman Anda. Dengan tenaga medis profesional dan teknologi
-                terkini, kami memberikan layanan terbaik untuk memastikan
-                kepuasan dan kesejahteraan pasien.
-              </p>
-              <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-                <a href="#" class="btn-reservation">Pesan Sekarang</a>
-                <a
-                  href="daftar-dokter.html"
-                  class="btn-list-dokter d-flex align-items-center"
-                  ><i class="bi bi-person-lines-fill"></i
-                  ><span>Daftar Dokter</span></a
-                >
-              </div>
-            </div>
-            <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-              <img
-                src="images/profil/profile-1.png"
-                class="glightbox img-fluid"
-                alt=""
-                data-aos="zoom-out"
-                data-aos-delay="300"
-              />
-            </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Fasilitas</h2>
+            <ol>
+              <li><a href="index.html">Beranda</a></li>
+              <li>Fasilitas</li>
+            </ol>
           </div>
         </div>
-      </section>
-      <!-- End Hero Section -->
+      </div>
+      <!-- End Breadcrumbs -->
 
-      <!-- ======= Fasilitas Section ======= -->
-      <section id="fasilities" class="fasilities">
-        <div class="container-fluid" data-aos="fade-up">
-          <div class="section-header">
-            <div class="d-flex">
-              <hr class="my-auto flex-grow-1" />
-              <h2 class="elementor-divider px-4">Fasilitas</h2>
-              <hr class="my-auto flex-grow-1" />
+      <!-- Daftar dokter -->
+      <section class="list-dokter">
+        <div class="container">
+          <div class="row text-center" data-aos="fade-up">
+            <div class="col-12">
+              <h2>Fasilitas Maryam Dental Care</h2>
             </div>
-            <p>Jelajahi <span>Fasilitas Premium</span> Kami</p>
           </div>
 
-          <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide fasility-item d-flex flex-column justify-content-end"
-                style="
-                  background-image: url(/images/profil/fasilitas/Dental-Clinic02-1024x683.jpg.jpg);
-                "
-              >
-                <h3>Pelayanan Perawatan Gigi Komprehensif</h3>
-                <p class="description">
+          <!-- Dokter 1 -->
+          <div class="row mt-4" data-aos="fade-up">
+            <div class="col-12 col-lg-4 px-4">
+              <div class="image-content">
+                <a
+                  class="glightbox"
+                  href="/images/profil/fasilitas/Dental-Clinic02-1024x683.jpg.jpg"
+                  type="image"
+                  slideEffect="slide"
+                >
+                  <img
+                    src="/images/profil/fasilitas/Dental-Clinic02-1024x683.jpg.jpg"
+                    class="card-img"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8 p-4">
+              <div class="dokter-detail">
+                <h5 class="title">Pelayanan Perawatan Gigi Komprehensif</h5>
+                <p class="subtitle">
                   Kami menyediakan layanan perawatan gigi komprehensif yang
                   mencakup pembersihan gigi profesional, perawatan karies, dan
                   konsultasi untuk menjaga kesehatan gigi dan gusi Anda. Tim
                   kami terdiri dari dokter gigi berpengalaman yang siap
-                  memberikan perawatan terbaik untuk senyuman Anda.
+                  memberikan perawatan terbaik untuk senyuman Anda
                 </p>
               </div>
-              <!-- End fasility item -->
+            </div>
+          </div>
 
-              <div
-                class="swiper-slide fasility-item d-flex flex-column justify-content-end"
-                style="
-                  background-image: url(/images/profil/fasilitas/Dental-Sanctuary-How-can-you-cho.jpg);
-                "
-              >
-                <h3>Teknologi Canggih untuk Diagnosa yang Akurat</h3>
-                <p class="description">
+          <!-- Dokter 2 -->
+          <div class="row mt-4" data-aos="fade-up">
+            <div class="col-12 col-lg-8 p-4 order-2 order-lg-1">
+              <div class="dokter-detail">
+                <h5 class="title">
+                  Teknologi Canggih untuk Diagnosa yang Akurat
+                </h5>
+                <p class="subtitle">
                   Di sini, kami menggunakan teknologi terkini dalam perawatan
                   gigi. Dengan peralatan diagnostik mutakhir, kami dapat
                   memberikan diagnosis yang akurat dan perawatan yang tepat.
@@ -194,212 +176,98 @@
                   nyaman.
                 </p>
               </div>
-              <!-- End fasility item -->
+            </div>
+            <div class="col-12 col-lg-4 px-4 order-1 order-lg-2">
+              <div class="image-content">
+                <a
+                  class="glightbox"
+                  href="/images/profil/fasilitas/Dental-Sanctuary-How-can-you-cho.jpg"
+                  type="image"
+                  slideEffect="slide"
+                >
+                  <img
+                  src="/images/profil/fasilitas/Dental-Sanctuary-How-can-you-cho.jpg""
+                  class="card-img" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
 
-              <div
-                class="swiper-slide fasility-item d-flex flex-column justify-content-end"
-                style="
-                  background-image: url(/images/profil/fasilitas/Meraki-dental-studio-best-dental.jpg);
-                "
-              >
-                <h3>Program Pencegahan untuk Keluarga</h3>
-                <p class="description">
+          <!-- Dokter 3 -->
+          <div class="row mt-4" data-aos="fade-up">
+            <div class="col-12 col-lg-4 px-4">
+              <div class="image-content">
+                <a
+                  class="glightbox"
+                  href="/images/profil/fasilitas/image-0.jpg"
+                  type="image"
+                  slideEffect="slide"
+                >
+                  <img
+                    src="/images/profil/fasilitas/image-0.jpg"
+                    class="card-img"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8 p-4">
+              <div class="dokter-detail">
+                <h5 class="title">Program Pencegahan untuk Keluarga</h5>
+                <p class="subtitle">
                   Kami sangat peduli terhadap kesehatan gigi keluarga Anda.
                   Melalui program pencegahan kami, kami menawarkan perawatan
                   gigi preventif, edukasi tentang kebiasaan makan yang sehat,
                   dan perlindungan gigi. Dengan fokus pada pencegahan, kami
                   membantu memastikan senyuman sehat dan bahagia untuk setiap
-                  anggota keluarga.
+                  anggota keluarga
                 </p>
               </div>
-              <!-- End fasility item -->
             </div>
-            <div class="swiper-pagination"></div>
           </div>
-        </div>
-      </section>
-      <!-- End Fasilitas Section -->
 
-      <!-- Visi Misi -->
-      <section id="visi-misi" class="visi-misi">
-        <div class="container-fluid">
-          <div class="row" data-aos="fade-up">
-            <div class="col-12 text-center title">
-              <h2>Visi Misi</h2>
+          <!-- Dokter 4 -->
+          <div class="row mt-4" data-aos="fade-up">
+            <div class="col-12 col-lg-8 p-4 order-2 order-lg-1">
+              <div class="dokter-detail">
+                <h5 class="title">
+                  Sterilisasi Alat untuk Perlindungan Pasien
+                </h5>
+                <p class="subtitle">
+                  Seluruh alat yang digunakan di Maryam Dental Clinic dalam
+                  prosedur perawatan dental sudah melalui proses sterilisasi
+                  menggunakan Oven Sterilisasi. Hal ini bertujuan untuk mencegah
+                  berbagai penyakit menular yang disebabkan oleh mikroorganisme
+                  patogen seperti bakteri, jamur, maupun virus selama perawatan
+                  gigi. Penggunaan alat sekali pakai juga diterapkan dalam
+                  beberapa prosedur perawatan guna mencegah infeksi silang antar
+                  pasien, sehingga pasien akan merasa lebih aman dan nyaman pada
+                  saat ditangani oleh dokter.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-lg-6 visi" data-aos="fade-right">
-              <h3 class="subtitle">Visi</h3>
-              <p>
-                Menjadi pusat perawatan gigi terkemuka yang memberikan pelayanan
-                holistik, inovatif, dan berbasis teknologi untuk mencapai
-                keunggulan dalam kesehatan gigi dan senyuman.
-              </p>
-            </div>
-            <div class="col-12 col-lg-6 misi" data-aos="fade-left">
-              <h3 class="subtitle">Misi</h3>
-              <ol>
-                <li class="list-misi">
-                  Memberikan perawatan gigi berkualitas tinggi dengan
-                  menggunakan teknologi terkini.
-                </li>
-                <li class="list-misi">
-                  Menciptakan pengalaman pasien yang nyaman, ramah, dan
-                  terpercaya.
-                </li>
-                <li class="list-misi">
-                  Mengedepankan pendidikan dan pencegahan untuk meningkatkan
-                  kesadaran masyarakat akan pentingnya kesehatan gigi.
-                </li>
-                <li class="list-misi">
-                  Berkomitmen pada pengembangan profesionalisme dan peningkatan
-                  keterampilan tim medis.
-                </li>
-              </ol>
+            <div class="col-12 col-lg-4 px-4 order-1 order-lg-2">
+              <div class="image-content">
+                <a
+                  class="glightbox"
+                  href="/images/profil/fasilitas/Meraki-dental-studio-best-dental.jpg"
+                  type="image"
+                  slideEffect="slide"
+                >
+                  <img
+                    src="/images/profil/fasilitas/Meraki-dental-studio-best-dental.jpg"
+                    class="card-img"
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
-            <div class="d-flex">
-              <hr class="my-auto flex-grow-1" />
-              <h2 class="elementor-divider px-4">Kontak</h2>
-              <hr class="my-auto flex-grow-1" />
-            </div>
-            <p>Butuh Bantuan? <span>Hubungi Kami</span></p>
-          </div>
-
-          <div class="mb-3">
-            <iframe
-              style="border: 0; width: 100%; height: 350px"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7978.594579236882!2d100.43718399429191!3d-0.9259711663605825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b98d85f0838d%3A0x69c6e0646f0650b5!2sMaryam%20Dental%20Care!5e0!3m2!1sen!2sid!4v1705565766979!5m2!1sen!2sid"
-              frameborder="0"
-              loading="lazy"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <!-- End Google Maps -->
-
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <div class="info-item d-flex align-items-center">
-                <i class="icon bi bi-map flex-shrink-0"></i>
-                <div>
-                  <h3>Lokasi Kami</h3>
-                  <p>
-                    Jl. Dr. Moh. Hatta No.15, Koto Luar, Kec. Pauh, Kota Padang,
-                    Sumatera Barat 25176
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div class="info-item d-flex align-items-center">
-                <i class="icon bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Kami</h3>
-                  <p>maryamdentalcare@gmail.com</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div class="info-item d-flex align-items-center">
-                <i class="icon bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Hubungi Kami</h3>
-                  <p>+62 823 8544 5775</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div class="info-item d-flex align-items-center">
-                <i class="icon bi bi-share flex-shrink-0"></i>
-                <div>
-                  <h3>Buka</h3>
-                  <div><strong>Senin - Minggu :</strong> 10.00 - 22.00</div>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-          </div>
-
-          <form
-            action="/"
-            method="post"
-            role="form"
-            class="php-email-form p-3 p-md-4"
-          >
-            <div class="row">
-              <div class="col-xl-6 form-group">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  id="name"
-                  placeholder="Namamu"
-                  required
-                />
-              </div>
-              <div class="col-xl-6 form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                name="subject"
-                id="subject"
-                placeholder="Subjek"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <textarea
-                class="form-control"
-                name="message"
-                rows="5"
-                placeholder="Pesan"
-                required
-              ></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Memuat</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Pesan Anda telah dikirim. Terima kasih!
-              </div>
-            </div>
-            <div class="text-center">
-              <button type="submit">Kirim Pesan</button>
-            </div>
-          </form>
-          <!--End Contact Form -->
-        </div>
-      </section>
-      <!-- End Contact Section -->
     </main>
-
     <!-- End #main -->
+
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="footer-content">
@@ -559,6 +427,5 @@
 
     <script src="/script/navbar.js"></script>
     <script src="/script/main.js"></script>
-    <script src="/script/swipper.js"></script>
   </body>
 </html>
